@@ -221,7 +221,10 @@ button {
 /* ============ HERO ============== */
 
 .hero {
-  background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/images/background-image/people-office-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  background-color: white;
   padding: 188px 0px;
   text-align: center;
 }
@@ -416,7 +419,6 @@ border: 1px solid transparent;
 .portfolio-services-list {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 48) / 3);
   row-gap: 48px;
   column-gap: 24px;
 }
