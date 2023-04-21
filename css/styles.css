@@ -432,7 +432,16 @@ height: 88px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: white;
+  margin-bottom: 16px;
 }
+
+.sm-footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+} 
+
+
 
 /* *************** PORTFOLIO PAGE **************** */
 
