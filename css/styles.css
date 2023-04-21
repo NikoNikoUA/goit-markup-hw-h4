@@ -441,7 +441,18 @@ height: 88px;
   gap: 16px;
 } 
 
+.footer-container {
+  display: flex;
+}
 
+.block-one-footer {
+  margin-right: 120px;
+}
+
+.sm-footer-link:hover,
+.sm-footer-link:focus {
+  background-color: #31D0AA;
+}
 
 /* *************** PORTFOLIO PAGE **************** */
 
