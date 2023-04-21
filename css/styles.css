@@ -396,6 +396,8 @@ button {
 
 .customers-list {
   display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .customer-listlink-icon {
