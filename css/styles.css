@@ -222,7 +222,8 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("/images/background-image/people-office-1.jpg");
+    url("../images/background-image/people-office-1.jpg");
+
 
   background-size: cover;
   background-color: #2e2f42;
@@ -400,15 +401,30 @@ button {
   gap: 24px;
 }
 
-.customer-listlink-icon {
+.customers-list-item {
+  display: block;
   border: 1px solid #8E8F99;
-border-radius: 4px;
-width: 168px;
-height: 88px;
-}
-
+  border-radius: 4px;
+  width: 168px;
+  height: 88px;
+  padding: 16px 32px;
+  }
+  
 .customers-icon {
   fill: #8E8F99;
+  width: 104px;
+  height: 56px;
+}
+
+.customer-list-logo:hover,
+.customer-list-logo:focus {
+
+  fill: #404BBF;
+  border: 1px solid #404BBF;
+}
+
+.customers-icon:hover {
+  fill: blue;
 }
 
 /* =================== FOOTER ================== */
