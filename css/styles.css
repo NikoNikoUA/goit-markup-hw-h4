@@ -290,18 +290,16 @@ button {
 }
 
 .our-benefits-icon {
+  display: flex;
   width: 264px;
   height: 112px;
   margin-bottom: 8px;
   background: #f4f4fd;
   border-radius: 4px;
-  padding: 24px 100px;
+  justify-content: center;
+  align-items: center;
 }
 
-.our-benefits-svg {
-  width: 64px;
-  height: 64px;
-}
 /* ==================== Our Works ==================== */
 .header-two {
   font-weight: 700;
@@ -383,9 +381,7 @@ button {
 }
 
 .sm-list-icon {
-  width: 16px;
-  height: 16px;
-  fill: white;
+    fill: white;
 }
 
 
@@ -401,31 +397,27 @@ button {
   gap: 24px;
 }
 
-.customers-list-item {
-  display: block;
+.customers-list-link {
+  color: #8E8F99;
+  display: flex;
   border: 1px solid #8E8F99;
   border-radius: 4px;
   width: 168px;
   height: 88px;
-  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
   }
-  
-.customers-icon {
-  fill: #8E8F99;
-  width: 104px;
-  height: 56px;
-}
 
-.customer-list-logo:hover,
-.customer-list-logo:focus {
+  .customers-icon {
+    fill: currentColor;
+  }
 
-  fill: #404BBF;
-  border: 1px solid #404BBF;
-}
+  .customers-list-link:hover,
+  .customers-list-link:focus {
+    color: #404BBF;
+    border: 1px solid #404BBF;
+  }
 
-.customers-icon:hover {
-  fill: blue;
-}
 
 /* =================== FOOTER ================== */
 .footer {
