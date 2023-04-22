@@ -11,6 +11,8 @@
   /* background colors */
   --accent-color: #404bbf;
   --background-color: #ffffff;
+
+  --svg-icon-color: #f4f4fd;
 }
 
 /* ============= Inherited features ============= */
@@ -157,6 +159,7 @@ button {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-navigation {
@@ -224,7 +227,8 @@ button {
     ),
     url("../images/background-image/people-office-1.jpg");
 
-
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-color: #2e2f42;
   padding: 188px 0px;
@@ -328,12 +332,12 @@ button {
 .section-employee-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
+  gap: 24px;
 }
 
-.section-employee-list-item:not(:nth-child(4n)) {
+/* .section-employee-list-item:not(:nth-child(4n)) {
   margin-right: 24px;
-}
+} */
 
 .section-employee-list-item {
   flex-basis: calc((100% - 72px) / 4);
@@ -346,7 +350,7 @@ button {
 }
 
 .employee-card-content {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .section-employees {
@@ -381,7 +385,7 @@ button {
 }
 
 .sm-list-icon {
-    fill: white;
+    fill: var(--svg-icon-color);
 }
 
 
@@ -389,6 +393,7 @@ button {
 
 .header-two-customers-section {
   margin-bottom: 72px;
+  line-height: 1.1; 
 }
 
 .customers-list {
@@ -453,6 +458,7 @@ button {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .block-one-footer {
@@ -462,6 +468,10 @@ button {
 .sm-footer-link:hover,
 .sm-footer-link:focus {
   background-color: #31D0AA;
+}
+
+.sm-footer-icon {
+  fill: var(--svg-icon-color);
 }
 
 /* *************** PORTFOLIO PAGE **************** */
@@ -526,7 +536,7 @@ button {
 }
 
 .portfolio-services-list-item {
-  flex-basis: calc((100% - 48px) / 3);
+   flex-basis: calc((100% - 48px) / 3);
 }
 
 .portfolio-card-content {
@@ -535,7 +545,12 @@ button {
   border-top: none;
 }
 
-.portfolio-services-list-item:hover {
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
